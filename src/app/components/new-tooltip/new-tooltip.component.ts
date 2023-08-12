@@ -3,10 +3,10 @@ import {TooltipPosition} from "../../shared/directives/tooltip.enums";
 
 @Component({
   selector: 'app-custom-tooltip',
-  templateUrl: './custom-tooltip.component.html',
-  styleUrls: ['./custom-tooltip.component.scss']
+  templateUrl: './new-tooltip.component.html',
+  styleUrls: ['./new-tooltip.component.scss']
 })
-export class CustomTooltipComponent {
+export class NewTooltipComponent {
   position: TooltipPosition = TooltipPosition.DEFAULT;
   inputData: any;
   left: number = 0;

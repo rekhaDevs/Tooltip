@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {CustomTooltipComponent} from "./components/custom-tooltip/custom-tooltip.component";
-import {customTooltipConfig} from "./Interfaces/custom-tooltip.Interface";
-import {TooltipPosition} from "./directives/tooltip.enums";
+import {customTooltipConfig} from "./shared/Interfaces/custom-tooltip.Interface";
+import {TooltipPosition} from "./shared/directives/tooltip.enums";
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,37 @@ import {TooltipPosition} from "./directives/tooltip.enums";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  toolTipData: customTooltipConfig<any> = {
+  toolTipLeft: customTooltipConfig<any> = {
+    component: CustomTooltipComponent,
+    inputData: {
+      username: 'Rekha',
+      city: 'Delhi'
+    },
+    position: TooltipPosition.LEFT
+  };
+  toolTipRight: customTooltipConfig<any> = {
     component: CustomTooltipComponent,
     inputData: {
       username: 'Rekha',
       city: 'Delhi'
     },
     position: TooltipPosition.RIGHT
+  };
+  toolTipAbove: customTooltipConfig<any> = {
+    component: CustomTooltipComponent,
+    inputData: {
+      username: 'Rekha',
+      city: 'Delhi'
+    },
+    position: TooltipPosition.ABOVE
+  };
+  toolTipBelow: customTooltipConfig<any> = {
+    component: CustomTooltipComponent,
+    inputData: {
+      username: 'Rekha',
+      city: 'Delhi'
+    },
+    position: TooltipPosition.BELOW
   };
   title = 'customDirective';
 }

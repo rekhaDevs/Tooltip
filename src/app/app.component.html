@@ -1,25 +1,24 @@
 <section>
-  <div class="demo-table__column">
-    <div appCustomTooltip [toolTipData]="toolTipData">
-      Component 1 Left
+  <div class="quadrants-container">
+    <div class="quadrant">
+      <div appCustomTooltip [toolTipData]="toolTipLeft">
+        Component 1 Left
+      </div>
     </div>
-  </div>
-
-  <div class="demo-table__column">
-    <div appCustomTooltip [toolTipData]="toolTipData">
-      Component 1 Right
+    <div class="quadrant">
+      <div appCustomTooltip [toolTipData]="toolTipRight">
+        Component 1 Right
+      </div>
     </div>
-  </div>
-
-  <div class="demo-table__column">
-    <div appCustomTooltip [toolTipData]="toolTipData">
-      Component 2 Above
+    <div class="quadrant">
+      <div appCustomTooltip [toolTipData]="toolTipAbove">
+        Component 2 Top
+      </div>
     </div>
-  </div>
-
-  <div class="demo-table__column">
-    <div appCustomTooltip [toolTipData]="toolTipData">
-      Component 2 Below
+    <div class="quadrant">
+      <div appCustomTooltip [toolTipData]="toolTipBelow">
+        Component 2 Bottom
+      </div>
     </div>
   </div>
 </section>

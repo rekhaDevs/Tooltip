@@ -6,5 +6,5 @@ type customTooltipPosition = TooltipPosition.LEFT | TooltipPosition.RIGHT | Tool
 export interface customTooltipConfig<T>{
     component: Type<T>,
     inputData?: Partial<T>;
-    position?: customTooltipPosition;
+    position: customTooltipPosition;
 }
