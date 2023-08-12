@@ -1,3 +1,25 @@
-<button>Do Something
-  <app-custom-tooltip></app-custom-tooltip>
-</button>
+<section>
+  <div class="demo-table__column">
+    <div appCustomTooltip [toolTipData]="toolTipData">
+      Component 1 Left
+    </div>
+  </div>
+
+  <div class="demo-table__column">
+    <div appCustomTooltip [toolTipData]="toolTipData">
+      Component 1 Right
+    </div>
+  </div>
+
+  <div class="demo-table__column">
+    <div appCustomTooltip [toolTipData]="toolTipData">
+      Component 2 Above
+    </div>
+  </div>
+
+  <div class="demo-table__column">
+    <div appCustomTooltip [toolTipData]="toolTipData">
+      Component 2 Below
+    </div>
+  </div>
+</section>

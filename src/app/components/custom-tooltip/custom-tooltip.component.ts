@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {customTooltipConfig} from "../../Interfaces/custom-tooltip.Interface";
 
 @Component({
   selector: 'app-custom-tooltip',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./custom-tooltip.component.scss']
 })
 export class CustomTooltipComponent {
-
+  toolTipData: customTooltipConfig<any> | undefined;
   tooltip: string = 'Hello';
   left: number = 0;
   top: number = 0;
