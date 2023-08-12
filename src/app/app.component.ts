@@ -30,7 +30,8 @@ export class AppComponent {
     component: NewTooltipComponent,
     inputData: {
       username: 'Rekha',
-      city: 'Delhi'
+      city: 'New Delhi',
+      state: 'Delhi'
     },
     position: TooltipPosition.ABOVE
   };
@@ -38,7 +39,8 @@ export class AppComponent {
     component: NewTooltipComponent,
     inputData: {
       username: 'Rekha',
-      city: 'Delhi'
+      city: 'New Delhi',
+      state: 'Delhi'
     },
     position: TooltipPosition.BELOW
   };
