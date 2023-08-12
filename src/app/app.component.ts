@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {CustomTooltipComponent} from "./components/custom-tooltip/custom-tooltip.component";
 import {customTooltipConfig} from "./shared/Interfaces/custom-tooltip.Interface";
 import {TooltipPosition} from "./shared/directives/tooltip.enums";
+import {NewTooltipComponent} from "./components/new-tooltip/new-tooltip.component";
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,7 @@ export class AppComponent {
     position: TooltipPosition.RIGHT
   };
   toolTipAbove: customTooltipConfig<any> = {
-    component: CustomTooltipComponent,
+    component: NewTooltipComponent,
     inputData: {
       username: 'Rekha',
       city: 'Delhi'
@@ -34,7 +35,7 @@ export class AppComponent {
     position: TooltipPosition.ABOVE
   };
   toolTipBelow: customTooltipConfig<any> = {
-    component: CustomTooltipComponent,
+    component: NewTooltipComponent,
     inputData: {
       username: 'Rekha',
       city: 'Delhi'
